@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<title>three.js webgl - STL</title>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0">
+
+		<link rel="stylesheet" type="text/css" href="css/normalize.css" />
+		<link rel="stylesheet" type="text/css" href="css/foundation.css" />
+		<link rel="stylesheet" type="text/css" href="css/main.css">
+
+		<script src="js/fundation/vendor/modernizr.js"></script>
+	</head>
+	<body>
+		<header>
+			<div class="" role="navigation">
+				<div class="left-header">
+					<h2>3D Editor</h2>
+				</div>
+			</div>
+		</header>
+		<div id="wizard">
+			<div class="steps">
+				<ul class="">
+					<li class=""><a href="#">Telefono</a></li>
+					<li class=""><a href="#">Color</a></li>
+					<li class=""><a href="#">Patron</a></li>
+					<li class=""><a href="#">Imagen</a></li>
+					<li class=""><a href="#">Texto</a></li>
+					<li class=""><a href="#">Exportar</a></li>
+				</ul>
+			</div>
+			<div class="controls">
+				<div id="options">
+					<controls>
+					<div class="row">
+					    <div class="col-md-12">
+					      <h3>Choose your phone:</h3>
+					    </div>
+					  </div>
+
+					  <div class="row">
+					    <div class="col-md-12">
+					      <div class="btn-group">
+
+					        <!-- TODO Generate from a list -->
+					        <button id="iphone5" class="btn btn-md">
+					          iPhone 5/5s
+					        </button>
+
+					        <button id="iphone6" class="btn btn-md">
+					          iPhone 6 
+					        </button>
+
+					        <button id="iphone6-plus" class="btn btn-md active">
+					          iPhone 6 Plus 
+					        </button>
+
+					      </div>
+					    </div>
+					  </div>
+
+					  <div class="divider"></div>
+
+					  <div class="row">
+					    <div class="col-md-12">
+					      <h3>Get Inspired:</h3>
+					    </div>
+					  </div>
+					  <div class="row">
+					    <div class="col-md-12">
+					      <div class="btn-group btn-phones" data-toggle="buttons">
+					        <label class="btn btn-default get-inspired" style="padding: 1px">
+					          <!-- refactor using a list of phones -->
+					          <!-- TODO: use paths for images -->
+					          <!-- TODO: don't mixin style in images -->
+					          <img src="images/Predefined_iPhone_Option01.png" alt="Option 01" style="width: 100px">
+					          <input type="radio" name="inspire" value="1">
+					        </label>
+					        <label class="btn btn-default get-inspired" style="padding: 1px">
+					          <img src="images/2.png" alt="Option 02" style="width: 100px">
+					          <input type="radio" name="inspire" value="2">
+					        </label>
+					        <label class="btn btn-default get-inspired" style="padding: 1px">
+					          <img src="images/3.png" alt="Option 03" style="width: 100px">
+					          <input type="radio" name="inspire" value="3">
+					        </label>
+					      </div>
+					    </div>
+					  </div>
+					  <div class="row push-to-bottom">
+
+					    <div class="col-md-6">
+					      
+					    </div>
+
+					    <div class="col-md-6">
+					      
+					        <a class="btn btn-primary btn-lg btn-block" href="/color">Next <i class="fa fa-chevron-right"></i></a>
+					      
+					    </div>
+					  </div>
+					  <!--Color-->
+					  <div class="row">
+					    <div class="col-md-12">
+					      <h3>Colores:</h3>
+					    </div>
+					  </div>
+					  <div class="row">
+					      <div class="col-md-12">
+					        <div class="button-group">
+					          <button class="button" style="background-color:#f7f7f7" color="#f7f7f7"></button>
+					        
+					          <button class="button" style="background-color:#30a7df" color="#30a7df"></button>
+					        
+					          <button class="button" style="background-color:#1c7434" color="#1c7434"></button>
+					        
+					          <button class="button" style="background-color:#fadb4f" color="#fadb4f"></button>
+					        
+					          <button class="button" style="background-color:#f6a345" color="#f6a345"></button>
+					        
+					          <button class="button" style="background-color:#e6372c" color="#e6372c"></button>
+					        
+					          <button class="button" style="background-color:#ea5e9d" color="#ea5e9d"></button>
+					        
+					          <button class="button" style="background-color:#9926e0" color="#9926e0"></button>
+					        
+					          <button class="button" style="background-color:#010101" color="#010101"></button>
+					        
+					        </div>
+					      </div>
+					    </div>
+					  <!--Color-->
+					</controls>
+				</div>
+				<div id="mainCanvas"></div>
+			</div>
+		</div>
+	</body>
+
+	<!-- Scripts Important -->
+	<script src="js/three.js"></script>
+	<script src="js/loaders/STLLoader.js"></script>
+	<script src="js/Detector.js"></script>
+	<!-- <script src="js/libs/stats.min.js"></script> -->
+
+	<!-- fundation js -->
+	<script src="js/fundation/vendor/jquery.js"></script>
+	<script src="js/fundation/foundation.js"></script>
+	<script>
+      $(document).foundation();
+    </script>
+	<!-- main js -->
+	<script src="js/app.js"></script>
+
+</html>

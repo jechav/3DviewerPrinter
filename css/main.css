@@ -1,0 +1,50 @@
+#mainCanvas {
+	font-family: Monospace;
+	background-color: #000000;
+	margin: 0px;
+	overflow: hidden;
+	position: relative;
+	width: 480px;
+	height: 540px;
+}
+body {
+	background-color: #eae9ed;
+	background-size: cover;
+	padding-bottom: 2%; 
+}
+header{
+	padding-top: 2%;
+	background-color: #34495e;
+}
+.left-header{
+	text-align: right;
+	margin-right: 2em; 
+}
+.steps ul{
+   list-style-type: none;
+   text-align: center;
+}
+.steps li{
+   display: inline;
+   text-align: center;
+   margin: 0 10px 0 0;
+}
+.steps li a {
+   padding: 2px 7px 2px 7px;
+   //border: 1px solid #ccc;
+   text-decoration: none;
+}
+.steps li a:hover{
+   background-color: #333333;
+   color: #ffffff;
+}
+#options {
+	padding-left: 20em;
+	padding-right: 5em;  
+	position: relative;
+	float: left;
+}
+.button-group button{
+	height: 25px;
+	width: 25px;
+}
